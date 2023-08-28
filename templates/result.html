@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Result of the Predictions</h1>
+
+    <table>
+        {% for i in range(0, table_heading|length) %}
+        <th> {{ table_heading[i] }} </th>
+        {% endfor %}
+
+        {% for i in range(0, result|length) %}
+        <tr>
+            <td> <img src=" {{ images[i] }} "> </td>
+            <td> {{ result[i] }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+<form action="/">
+    <input type="submit" value="Predict Again">
+</form>
+
+</body>
+</html>

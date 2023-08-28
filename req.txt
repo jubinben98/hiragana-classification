@@ -1,0 +1,6 @@
+tensorflow
+numpy
+Flask
+Pillow
+opencv-python
+pandas
