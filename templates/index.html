@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hiragana-Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Hiragana Classifier</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-
-    <form action="/submit" method='post' enctype="multipart/form-data">
-        <input type="file" id="input_image" name="images" multiple>
-        <input type="submit" value="Submit">
-      </form> 
-
+    <div class="upload-form">
+        <h1>Hiragana Classifier</h1>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <br>
+            <label for="input_image">Select one or more images:</label>
+            <br>
+            <input type="file" id="input_image" name="images" multiple>
+            <br>
+            <input type="submit" id="submit_button" value="Upload and Classify">
+        </form>
+    </div>
 </body>
 </html>
