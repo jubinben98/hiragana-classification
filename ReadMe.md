@@ -8,7 +8,7 @@ This repository presents a web application that serves as a user interface for H
 
 ## Directory Structure Overview
 
-- `Assignment`: Root directory.
+- `MF-Assignement`: Root directory.
   - `app/`: Main application module.
     - `static/`: Static assets directory.
       - `assets/`: Additional assets.
@@ -24,3 +24,21 @@ This repository presents a web application that serves as a user interface for H
       - `Hiragana Classification.ipynb`: Notebook used to train the ANN model.
   - `run.py`: Script to run the Flask app.
   - `config.py`: Configuration settings.
+
+## How to run using Docker (Recommended)
+
+Step 1: Go in to the root directory of the project.
+```commandline
+cd MF-Assignement
+```
+
+Step 2: Build the docker image.
+```commandline
+docker build -t hiragana_classifier .
+```
+
+Step 3: Execute the docker image.
+```commandline
+docker run --rm -p 8001:8001 hiragana_classifier
+```
+**Note:** Make sure that port 8001 is not already taken. Otherwise, change the host port.
