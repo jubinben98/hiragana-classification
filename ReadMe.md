@@ -8,7 +8,7 @@ This repository presents a web application that serves as a user interface for H
 
 ## Directory Structure Overview
 
-- `MF-Assignement`: Root directory.
+- `hiragana-classification`: Root directory.
   - `app/`: Main application module.
     - `static/`: Static assets directory.
       - `assets/`: Additional assets.
@@ -31,7 +31,7 @@ This repository presents a web application that serves as a user interface for H
 
 Step 1: Go in to the root directory of the project.
 ```commandline
-cd MF-Assignement
+cd hiragana-classification
 ```
 
 Step 2: Build the docker image.
@@ -48,7 +48,7 @@ docker run --rm -p 8001:8001 hiragana_classifier
 ## How to run (manual installation)
 Step 1: Go in to the root directory of the project.
 ```commandline
-cd MF-Assignement
+cd hiragana-classification
 ```
 
 Step 2: Install the dependencies.
